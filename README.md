@@ -1,6 +1,13 @@
 # Notes App — React Frontend (Week 5)
 
-A React frontend that connects to the Notes REST API built in Week 4. Users can view, add, and delete notes through a clean browser interface.
+A React frontend that connects to the Notes REST API built in Week 4.
+
+## App Preview
+
+![Notes App Screenshot](app-screenshot.png)
+
+Users can view, add, and delete notes through a clean browser interface.
+
 
 ## Project Structure
 
