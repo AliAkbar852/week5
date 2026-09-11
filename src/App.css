@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  padding: 30px 16px;
+  color: #1f2937;
+}
+
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #6366f1;
+}
+
+/* Add Note Form */
+.add-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.add-form h2 {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  color: #374151;
+}
+
+.add-form input,
+.add-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+
+.add-form input:focus,
+.add-form textarea:focus {
+  border-color: #6366f1;
+}
+
+.add-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-form button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-form button:hover {
+  background-color: #4f46e5;
+}
+
+.add-form button:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+/* Note List */
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Note Card */
+.note-card {
+  background: white;
+  padding: 18px 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.note-card-body h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.note-card-body p {
+  font-size: 0.88rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.note-card-body .date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+.delete-btn {
+  background: none;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  background-color: #fee2e2;
+}
+
+/* Status messages */
+.loading,
+.error,
+.empty {
+  text-align: center;
+  padding: 40px;
+  font-size: 1rem;
+}
+
+.error {
+  color: #ef4444;
+}
+
+.empty {
+  color: #9ca3af;
+}
+
+.error-msg {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
